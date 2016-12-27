@@ -1,0 +1,78 @@
+{% extends 'new_base.html' %}
+
+{% block grid %}
+<!--网格布局-->
+<div class="ui equal width grid" style="width:60%;margin:5px 5px 5px 5px;">
+	  <div class="row">
+	    <div class="column">
+	      <div class="ui red segment">
+	        <div class="ui statistic">
+	          <div class="value">
+	            {{ counts }}
+	          </div>
+	          <div class="label">
+	            Docments
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="column">
+	      <div class="ui blue segment">
+	        <div class="ui statistic">
+	          <div class="value">
+	            2,000
+	          </div>
+	          <div class="label">
+	            Views
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="column">
+	      <div class="ui segment">
+	        <div class="ui divided items">
+	          {% for item in ItemInfo %}
+	          <div class="item">
+	            <div class="content">
+	              <a class="header">
+	                {{ item.title }}
+	              </a>
+	              <div class="description">
+	                {{ item.area }}
+	              </div>
+	              <div class="extra">
+									{% for tag in item.cates %}
+	                <div class="ui label">
+	                  {{ tag }}
+	                </div>
+									{% endfor %}
+	              </div>
+	            </div>
+	          </div>
+		        {% endfor %}
+	        </div>
+		      <!--分页-->
+          <div class="ui pagination menu">
+	          {% if ItemInfo.has_previous %}
+            <a class="icon item" href="?page={{ ItemInfo.previous_page_number }}">
+	            <i class="left arrow icon"></i>
+            </a>
+	          {% endif %}
+            <div class="disable item">
+              {{ ItemInfo.number }} of {{ ItemInfo.paginator.num_pages }}
+            </div>
+            {% if ItemInfo.has_next %}
+            <a class="item" href="?page={{ ItemInfo.next_page_number }}">
+	            <i class="right arrow icon"></i>
+            </a>
+            {% endif %}
+          </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+{% endblock %}
+
+

@@ -1,0 +1,9 @@
+{'title': 'hainan', 'des': 'hainan is beautiful', '_id':{"$oid":"5698f524a98063dbe9e91ca8"}, 'scores':'90', 'tags': 'hainan'}
+{'title': 'beijing', 'des': 'beijing is beautiful', '_id':{"$oid":"5698f525a98063dbe4e91ca8"}, 'scores':'95', 'tags': 'beijing'}
+{'title': 'shanghai', 'des': 'shanghai is beautiful', '_id':{"$oid":"5698f525a98063dbe6e91ca8"}, 'scores':'94', 'tags': 'shanghai'} 
+{'title': 'shandong', 'des': 'shandong is beautiful', '_id':{"$oid":"5698f525a98063dbe7e91ca8"}, 'scores':'92', 'tags': 'shandong'}
+{'title': 'xianggang', 'des': 'xiangang is beautiful', '_id':{"$oid":"5698f525a98063dbe8e91ca8"}, 'scores':'96', 'tags': 'xianggang'} 
+{'title': 'aiqinhai', 'des': 'aiqinhai is beautiful', '_id':{"$oid":"5698f525a98063dbe6e91ca9"}, 'scores':'100', 'tags': 'aiqinhai'} 
+{'title': 'xinan', 'des': 'xinan is beautiful', '_id':{"$oid":"5698f525a98063dbe8e91ca9"}, 'scores':'91', 'tags': 'xinan'} 
+{'title': 'xila', 'des': 'xila is beautiful', '_id':{"$oid":"5698f525a98063dbe7e91ca9"}, 'scores':'99', 'tags': 'xila'}
+{'title': 'henan', 'des': 'henan is beautiful', '_id':{"$oid":"5698f525a98063dbe5e91ca8"}, 'scores':'98', 'tags': 'henan'}
