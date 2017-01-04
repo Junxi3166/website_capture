@@ -30,7 +30,7 @@ class ItemInfo(Document):
     pub_date = StringField()
     url = StringField()
     look = StringField()
-    meta = {'collection': 'item_infoS'}
+    meta = {'collection': 'item_info'}
 
 
 pipeline = [

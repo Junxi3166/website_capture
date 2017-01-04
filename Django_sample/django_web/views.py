@@ -78,7 +78,7 @@ def one_day_deal_area():
 pie1_data = [i for i in one_day_deal_cate()]
 pie2_data = [i for i in one_day_deal_area()]
 
-
+print(pie1_data)
 #============================================== <<<< PAGE VIEWS >>>> ===================================================
 
 
